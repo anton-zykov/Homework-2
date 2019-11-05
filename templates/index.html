@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Put on questionnaire</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+<form action="http://127.0.0.1:5000/thanks" method = 'POST'>
+    <fieldset>
+        <legend><b>Put on questionnaire</b></legend>
+        Please, specify your mother tongue.<br>
+        For example: Russian, Spanish, English.<br>
+        <input type="text" name="lang" class="form-control" required pattern='[a-zA-Z]+'><br>
+        <p>You are shown things that you can put on yourself. For each picture, please, write a verb in your language that
+    you will use to say 'put on' for the particular thing. Try not to use the universal verb (e.g. in English use 'wrap'
+    for scarf instead of 'put on').</p>
+        <img src="/static/coat.jpg" style = 'height:200px'><br>
+        <input type="text" class="form-control" name="coat"><br>
+        <img src="/static/gloves.jpg" style = 'height:200px'><br>
+        <input type="text" class="form-control" name="gloves"><br>
+        <img src="/static/scarf.jpg" style = 'height:200px'><br>
+        <input type="text" class="form-control" name="scarf"><br>
+        <img src="/static/shoes.jpg" style = 'height:200px'><br>
+        <input type="text" class="form-control" name="shoes"><br>
+        <input type="submit" class="btn btn-success" value="Submit">
+    </fieldset>
+</form>
+<div class="btn-group">
+  <a href='/search' class="btn btn-primary">Search</a>
+  <a href='/stats' class="btn btn-primary">Statistics</a>
+</div>
+</body>
+</html>

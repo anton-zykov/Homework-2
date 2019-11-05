@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+<form action="http://127.0.0.1:5000/results" method = 'POST'>
+    <fieldset>
+        <legend><b>Search</b></legend>
+        Type in a word or language that you want to find.<br>
+        <input type="text" class="form-control" name="what_search"><br>
+        <p><input type="submit" class="form-control" value="Find"></p>
+<div class="btn-group">
+  <a href='/' button class="btn btn-primary">Homepage</a>
+  <a href='/search' class="btn btn-primary">Search</a>
+  <a href='/stats' class="btn btn-primary">Statistics</a>
+</div>
+</body>
+</html>
